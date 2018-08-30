@@ -12,10 +12,12 @@ namespace RoodMorse
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(Dictionary<string, string> morsetable)
         {
             InitializeComponent();
         }
+
+        static Dictionary<string, string> MorseTable { get; set; }
 
         private void CheckMorse()
         {
