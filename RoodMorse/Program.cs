@@ -13,7 +13,7 @@ namespace RoodMorse
         /// </summary>
         /// 
 
-        Dictionary<string, string> GetMorseTable()
+        public static Dictionary<string, string> GetMorseTable()
         {
             Dictionary<string, string> morsetable = new Dictionary<string, string>();
             morsetable.Add("A", ".-");
@@ -52,6 +52,7 @@ namespace RoodMorse
             morsetable.Add("8", "---..");
             morsetable.Add("9", "----.");
             morsetable.Add("0", "-----");
+            return morsetable;
         }
 
         [STAThread]

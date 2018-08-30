@@ -31,6 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxLanguage = new System.Windows.Forms.TextBox();
             this.textBoxMorse = new System.Windows.Forms.TextBox();
+            this.buttonConvert = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,9 +51,8 @@
             this.textBoxLanguage.Location = new System.Drawing.Point(50, 55);
             this.textBoxLanguage.Multiline = true;
             this.textBoxLanguage.Name = "textBoxLanguage";
-            this.textBoxLanguage.Size = new System.Drawing.Size(620, 142);
+            this.textBoxLanguage.Size = new System.Drawing.Size(583, 142);
             this.textBoxLanguage.TabIndex = 1;
-            this.textBoxLanguage.TextChanged += new System.EventHandler(this.Translate);
             // 
             // textBoxMorse
             // 
@@ -59,14 +60,38 @@
             this.textBoxMorse.Location = new System.Drawing.Point(50, 215);
             this.textBoxMorse.Multiline = true;
             this.textBoxMorse.Name = "textBoxMorse";
-            this.textBoxMorse.Size = new System.Drawing.Size(620, 175);
+            this.textBoxMorse.Size = new System.Drawing.Size(583, 175);
             this.textBoxMorse.TabIndex = 2;
+            // 
+            // buttonConvert
+            // 
+            this.buttonConvert.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonConvert.Location = new System.Drawing.Point(656, 111);
+            this.buttonConvert.Name = "buttonConvert";
+            this.buttonConvert.Size = new System.Drawing.Size(104, 43);
+            this.buttonConvert.TabIndex = 3;
+            this.buttonConvert.Text = "Convert";
+            this.buttonConvert.UseVisualStyleBackColor = true;
+            this.buttonConvert.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonConvertClick);
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(656, 242);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(104, 45);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Clear";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonClearClick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(706, 411);
+            this.ClientSize = new System.Drawing.Size(781, 411);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonConvert);
             this.Controls.Add(this.textBoxMorse);
             this.Controls.Add(this.textBoxLanguage);
             this.Controls.Add(this.label1);
@@ -83,6 +108,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxLanguage;
         private System.Windows.Forms.TextBox textBoxMorse;
+        private System.Windows.Forms.Button buttonConvert;
+        private System.Windows.Forms.Button button1;
     }
 }
 
