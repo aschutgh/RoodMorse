@@ -16,5 +16,10 @@ namespace RoodMorse
         {
             InitializeComponent();
         }
+
+        private void Translate(object sender, EventArgs e)
+        {
+
+        }
     }
 }
