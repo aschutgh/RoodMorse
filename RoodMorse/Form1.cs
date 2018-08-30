@@ -17,9 +17,29 @@ namespace RoodMorse
             InitializeComponent();
         }
 
-        private void Translate(object sender, EventArgs e)
+        private void CheckMorse()
+        {
+            
+        }
+
+        private void CheckLang()
         {
 
+        }
+
+        private void ToLang()
+        {
+
+        }
+
+        private void ToMorse()
+        {
+
+        }
+
+        private void Translate(object sender, EventArgs e)
+        {
+            
         }
     }
 }
