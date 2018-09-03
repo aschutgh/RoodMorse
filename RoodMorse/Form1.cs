@@ -22,6 +22,7 @@ namespace RoodMorse
 
         static Dictionary<string, string> MorseTable { get; set; }
         static string Alnum { get; set; }
+        private RadioButton selectedrb;
 
         private void CheckMorse()
         {
@@ -47,7 +48,6 @@ namespace RoodMorse
                 {
                 textBoxMorse.AppendText(MorseTable[c.ToString()]);
                 textBoxMorse.AppendText(" ");
-                //textBoxMorse.AppendText(c.ToString());
                 }
             }
         }
@@ -66,6 +66,22 @@ namespace RoodMorse
         {
             textBoxLanguage.Clear();
             textBoxMorse.Clear();
+        }
+
+        //private void lmCheckedChanged(object sender, EventArgs e)
+        //{
+        //    RadioButton rb = (RadioButton)sender;
+        //    selectedrb.Text = rb.Text;
+        //}
+
+        private void MorseRDClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Morse RD was clicked");
+        }
+
+        private void LanguageRDClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Language RD was clicked");
         }
     }
 }
