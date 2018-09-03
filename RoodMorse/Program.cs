@@ -63,6 +63,9 @@ namespace RoodMorse
             {
                 langtable.Add(kvp.Value, kvp.Key);
             }
+            langtable.Add("   ", " ");
+            langtable.Add(" ", " ");
+            langtable.Add("    ", " ");
 
             return langtable;
         }

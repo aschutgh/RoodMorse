@@ -39,7 +39,21 @@ namespace RoodMorse
 
         private void ToLang(string tolang)
         {
-
+            string[] words;
+            string[] sepw = new string[] { "   " };
+            words = tolang.Split(sepw, StringSplitOptions.None);
+            foreach(string word in words)
+            {
+                string[] letters;
+                string[] sepl = new string[] { " " };
+                letters = word.Split(sepl, StringSplitOptions.None);
+                foreach(string letter in letters)
+                {
+                    if (ToLangTable.ContainsKey(letter))
+                        textBoxMorse.AppendText(ToLangTable[letter]);
+                }
+                textBoxMorse.AppendText(" ");
+            }
         }
 
         private void ToMorse(string tomorse)
@@ -60,7 +74,9 @@ namespace RoodMorse
         private void Translate()
         {
             if (selectedrb.Text == "Morse")
-                ToMorse(textBoxLanguage.Text.ToUpper()); 
+                ToMorse(textBoxLanguage.Text.ToUpper());
+            if (selectedrb.Text == "Language")
+                ToLang(textBoxLanguage.Text);
         }
 
         private void buttonConvertClick(object sender, MouseEventArgs e)
