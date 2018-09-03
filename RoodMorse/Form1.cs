@@ -12,16 +12,18 @@ namespace RoodMorse
 {
     public partial class Form1 : Form
     {
-        public Form1(Dictionary<string, string> tomorsetable)
+        public Form1(Dictionary<string, string> tomorsetable, Dictionary<string, string> tolangtable)
         {
             InitializeComponent();
             ToMorseTable = tomorsetable;
+            ToLangTable = tolangtable;
             Alnum = "abcedefghijklmnopqrstuvwxyz0123456789";
             Alnum = Alnum.ToUpper();
-            selectedrb = radioButton1;
+            selectedrb = radioButton2;
         }
 
         static Dictionary<string, string> ToMorseTable { get; set; }
+        static Dictionary<string, string> ToLangTable { get; set; }
         static string Alnum { get; set; }
         private RadioButton selectedrb;
 

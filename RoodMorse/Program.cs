@@ -55,13 +55,26 @@ namespace RoodMorse
             return morsetable;
         }
 
+
+        public static Dictionary<string, string> GetToLangTable(Dictionary<string, string> mt)
+        {
+            Dictionary<string, string> langtable = new Dictionary<string, string>();
+            foreach (KeyValuePair<string, string> kvp in mt)
+            {
+                langtable.Add(kvp.Value, kvp.Key);
+            }
+
+            return langtable;
+        }
+
         [STAThread]
         static void Main()
         {
             var ToMorseTable = GetToMorseTable();
+            var ToLangTable = GetToLangTable(ToMorseTable);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(ToMorseTable));
+            Application.Run(new Form1(ToMorseTable, ToLangTable));
         }
     }
 }
