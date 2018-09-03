@@ -90,6 +90,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(656, 137);
             this.radioButton1.Name = "radioButton1";
@@ -98,7 +99,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Language";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.LanguageRDClick);
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.LMCheckChanged);
             // 
             // radioButton2
             // 
@@ -111,7 +112,7 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Morse";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.MorseRDClick);
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.LMCheckChanged);
             // 
             // Form1
             // 

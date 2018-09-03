@@ -13,7 +13,7 @@ namespace RoodMorse
         /// </summary>
         /// 
 
-        public static Dictionary<string, string> GetMorseTable()
+        public static Dictionary<string, string> GetToMorseTable()
         {
             Dictionary<string, string> morsetable = new Dictionary<string, string>();
             morsetable.Add("A", ".-");
@@ -58,10 +58,10 @@ namespace RoodMorse
         [STAThread]
         static void Main()
         {
-            var MorseTable = GetMorseTable();
+            var ToMorseTable = GetToMorseTable();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1(MorseTable));
+            Application.Run(new Form1(ToMorseTable));
         }
     }
 }
