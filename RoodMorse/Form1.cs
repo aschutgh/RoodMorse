@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+// FIXME: Need to clean up some function names
+
 namespace RoodMorse
 {
     public partial class Form1 : Form
