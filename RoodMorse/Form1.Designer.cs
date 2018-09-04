@@ -72,7 +72,7 @@
             this.buttonConvert.Name = "buttonConvert";
             this.buttonConvert.Size = new System.Drawing.Size(104, 43);
             this.buttonConvert.TabIndex = 3;
-            this.buttonConvert.Text = "Convert";
+            this.buttonConvert.Text = "Convert to";
             this.buttonConvert.UseVisualStyleBackColor = true;
             this.buttonConvert.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonConvertClick);
             // 
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(781, 411);
+            this.ClientSize = new System.Drawing.Size(774, 411);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.button1);
